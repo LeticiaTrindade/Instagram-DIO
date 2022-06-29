@@ -7,9 +7,9 @@
     font-size: 14px;
 }
 
-body{
+.all{
     width: 100%;
-    min-height: 100vh;
+    min-height: 85vh;
     background-color: rgb(243,243,243);
     margin: 0;
     padding-left: 10%;
@@ -24,7 +24,8 @@ body{
     align-items: center;
     justify-content: start;
     width: 60%;
-    height: 100vh;
+    height: 85vh;
+   
 }
 
 .phones{
@@ -46,6 +47,7 @@ body{
     flex-direction: column;
     width: 50%;
     height: 35rem;
+    min-width: 400px;
 }
 
 .container-white{
@@ -74,11 +76,11 @@ body{
 }
 
 .container-white input::placeholder{
-    font-size: 16px ;
+    font-size: 14.5px ;
 } 
 
 .container-white #session{
-    background-color: #0195f7;
+    background-color: #0195f76c;
     color: white;
     margin: 15px;
     padding: 10px;
@@ -128,7 +130,7 @@ body{
 }
 
 #facebook img{
-    width: 15px;
+    width: 20px;
     margin-right: 5px;
 }
 
@@ -168,5 +170,56 @@ body{
 
 .container-end img{
    max-width: 165px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(243,243,243);
+}
+.footerClass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width:65%;
+    color:#a2a2a2;
+    padding-bottom: 10vh;
+    
+    
+}
+.footerClass p{
+    padding: 10px;
+    font-size: 17px;
+}
+
+
+@media(max-width: 992px){
+
+    body{
+        padding:0;
+        margin: 0;
+    }
+
+    .phones{
+        visibility: hidden;
+    }
+
+    .phones img{
+        width: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .flex-container{
+        align-items: center;
+    }
+
+ 
+
+
 }
 
